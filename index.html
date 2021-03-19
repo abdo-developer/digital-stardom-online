@@ -7,61 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الرئيسية | </title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script defer src="./app.js"></script>
-    <link href="./assets/css/styles.css" rel="stylesheet">
-</head>
+<script defer src="./app.js"></script><link href="./assets/css/styles.css" rel="stylesheet"></head>
 
 <body>
 
     <!-- Top Header -->
-    <header class="header_top_page">
+    <header class="header_top_page head-main">
         <!-- Navbar collapse -->
 
-        <nav class="navbar">
-            <!--  style="background-color: #7176E4;" -->
-            <a class="navbar-brand logo_brand" href="index.html" style="color: aliceblue;">
-                <img src="./assets/images/logo_brand.svg" alt="شعار الموقع">
-            </a>
 
-            <!-- طلب تقييم فكرة + طلب عرض سعر -->
-            <ul class="list-inline hidden-on-small">
-                <li class="list-inline-item more-menu">
-                    <a href="#" class="nav-link">اطلب عرض سعر</a>
-                </li>
-                <li class="list-inline-item more-menu">
-                    <a href="#" class="nav-link">طلب تقييم فكرة</a>
-                </li>
-            </ul>
-            <!--نهاية طلب تقييم فكرة + طلب عرض سعر -->
+        <div class="navbar navbar-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand logo_brand d-flex align-items-center">
+                    <img src="./assets/images/logo_brand.svg" alt="شعار الموقع">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDigitalStarDom">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <!-- القائمة العلوية -->
-            <div class="collapse navbar-collapse" id="navbarDigitalStarDom">
-                <ul class="navbar-nav mr-auto ml-auto">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">الخدمات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">الأعمال</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">عن الشركة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">المدونة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">تواصل معنا</a>
-                    </li>
-                </ul>
-
-                <ul class="list-inline d-lg-none d-md-none d-sm-none show-all-small">
+                <!-- تقييم فكرة أو اطلب عر ضسعر  -->
+                <ul class="list-inline m-0 visit-link hidden-on-small">
                     <li class="list-inline-item more-menu">
                         <a href="#" class="nav-link">اطلب عرض سعر</a>
                     </li>
@@ -69,10 +31,36 @@
                         <a href="#" class="nav-link">طلب تقييم فكرة</a>
                     </li>
                 </ul>
+                <!-- النهاية -->
+
+                <a class="nav-button">
+                    <span id="nav-icon3">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </a>
 
             </div>
-            <!-- نهاية الكُوود -->
-        </nav>
+        </div>
+        <!--navbar end-->
+
+        <div class="fixed-top main-menu">
+            <div class="flex-center p-5">
+                <ul class="nav flex-column">
+                    <li class="nav-item delay-1"><a class="nav-link" href="#">الرئيسية</a></li>
+                    <li class="nav-item delay-2"><a class="nav-link" href="#">الخدمات</a></li>
+                    <li class="nav-item delay-3"><a class="nav-link" href="#">الأعمال</a></li>
+                    <li class="nav-item delay-4"><a class="nav-link" href="#">عن الشركة</a></li>
+                    <li class="nav-item delay-5"><a class="nav-link" href="#">المدونة</a></li>
+                    <li class="nav-item delay-5"><a class="nav-link" href="#">اطلب عرض سعر</a></li>
+                    <li class="nav-item delay-5"><a class="nav-link" href="#">طلب تقييم فكرة</a></li>
+                    <li class="nav-item delay-6"><a class="nav-link" href="#">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--main-menu end-->
+
+
+
         <!-- End Navbar collapse -->
 
         <!-- Content Header -->
@@ -80,7 +68,8 @@
             <div class="row">
 
                 <!-- Section content -->
-                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <!-- Title section -->
                     <div class="title_heading">
                         <h4 class="custom_title">
@@ -114,7 +103,8 @@
                 <!-- End section content -->
 
                 <!-- SECTION IMAGE Header -->
-                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="image-header text-center">
                         <img src="./assets/images/pc_image.svg" alt="حاسوب محمول">
                     </div>
@@ -134,7 +124,8 @@
             <div class="row">
 
                 <!-- SECTION IMAGE ABOUT COMPANY -->
-                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="image-about">
                         <img src="./assets/images/about-company.png" alt="عن الشركة">
                     </div>
@@ -142,7 +133,8 @@
                 <!-- End -->
 
                 <!-- Section content about company -->
-                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="circle_top">
                         <ul class="list-inline">
                             <li class="list-inline-item">
@@ -225,7 +217,8 @@
 
             <!-- First Row Services -->
             <div class="row">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                     <div class="card-service">
                         <!-- Icon image sevice -->
@@ -250,7 +243,8 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                     <div class="card-service">
                         <!-- Icon image sevice -->
@@ -275,7 +269,8 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6 d-lg-block d-md-none" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 d-lg-block d-md-none" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                     <div class="card-service">
                         <!-- Icon image sevice -->
@@ -305,7 +300,8 @@
 
             <!-- Two Row Services -->
             <div class="row">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                     <div class="card-service">
                         <!-- Icon image sevice -->
@@ -330,7 +326,8 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                     <div class="card-service">
                         <!-- Icon image sevice -->
@@ -355,7 +352,8 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6 d-lg-block d-md-none" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 d-lg-block d-md-none" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                     <div class="card-service">
                         <!-- Icon image sevice -->
@@ -428,7 +426,8 @@
             <div class="row">
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -441,7 +440,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -455,8 +455,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-up"
-                    data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-right"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -475,7 +475,8 @@
             <div class="row">
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -488,7 +489,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -501,8 +503,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-up"
-                    data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-right"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -521,7 +523,8 @@
             <div class="row">
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -534,7 +537,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -547,8 +551,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-up"
-                    data-aos-duration="2000">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-right"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
