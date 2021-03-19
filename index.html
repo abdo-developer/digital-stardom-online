@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الرئيسية | </title>
-<script defer src="./app.js"></script><link href="./assets/css/styles.css" rel="stylesheet"></head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="./app.js"></script>
+    <link href="./assets/css/styles.css" rel="stylesheet">
+</head>
 
 <body>
 
     <!-- Top Header -->
     <header class="header_top_page">
-
         <!-- Navbar collapse -->
-        <nav class="navbar fixed-top" style="background-color: #7176E4;">
-            
+
+        <nav class="navbar">
+            <!--  style="background-color: #7176E4;" -->
             <a class="navbar-brand logo_brand" href="index.html" style="color: aliceblue;">
                 <img src="./assets/images/logo_brand.svg" alt="شعار الموقع">
             </a>
 
             <!-- طلب تقييم فكرة + طلب عرض سعر -->
-            <ul class="list-inline">
+            <ul class="list-inline hidden-on-small">
                 <li class="list-inline-item more-menu">
                     <a href="#" class="nav-link">اطلب عرض سعر</a>
                 </li>
@@ -30,7 +33,7 @@
                 </li>
             </ul>
             <!--نهاية طلب تقييم فكرة + طلب عرض سعر -->
-            
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDigitalStarDom">
                 <i class="fas fa-bars"></i>
             </button>
@@ -41,28 +44,35 @@
                     <li class="nav-item active">
                         <a href="#" class="nav-link">الرئيسية</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">الخدمات</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">الأعمال</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">عن الشركة</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">المدونة</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">تواصل معنا</a>
                     </li>
                 </ul>
+
+                <ul class="list-inline d-lg-none d-md-none d-sm-none show-all-small">
+                    <li class="list-inline-item more-menu">
+                        <a href="#" class="nav-link">اطلب عرض سعر</a>
+                    </li>
+                    <li class="list-inline-item more-menu">
+                        <a href="#" class="nav-link">طلب تقييم فكرة</a>
+                    </li>
+                </ul>
+
             </div>
             <!-- نهاية الكُوود -->
         </nav>
-
-        
-
         <!-- End Navbar collapse -->
 
         <!-- Content Header -->
@@ -70,7 +80,7 @@
             <div class="row">
 
                 <!-- Section content -->
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                     <!-- Title section -->
                     <div class="title_heading">
                         <h4 class="custom_title">
@@ -95,7 +105,7 @@
                     <!-- End -->
 
                     <!-- Link Portfolio projects -->
-                    <div class="portfolio_projects">
+                    <div class="portfolio_projects glow-on-hover">
                         <a href="#" class="custom_btn">معرض الأعمَال</a>
                     </div>
                     <!-- End -->
@@ -104,7 +114,7 @@
                 <!-- End section content -->
 
                 <!-- SECTION IMAGE Header -->
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                     <div class="image-header text-center">
                         <img src="./assets/images/pc_image.svg" alt="حاسوب محمول">
                     </div>
@@ -118,14 +128,13 @@
     </header>
     <!-- End -->
 
-
     <!-- Start Section about a company startdoom digital -->
     <section class="about-company">
         <div class="container">
             <div class="row">
 
                 <!-- SECTION IMAGE ABOUT COMPANY -->
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                     <div class="image-about">
                         <img src="./assets/images/about-company.png" alt="عن الشركة">
                     </div>
@@ -133,7 +142,7 @@
                 <!-- End -->
 
                 <!-- Section content about company -->
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                     <div class="circle_top">
                         <ul class="list-inline">
                             <li class="list-inline-item">
@@ -216,73 +225,79 @@
 
             <!-- First Row Services -->
             <div class="row">
-                <div class="col-lg-4 col-md-12 card-service">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
 
-                    <!-- Icon image sevice -->
-                    <div class="icon-service text-center">
-                        <img src="./assets/images/website_design.svg" alt="تصميم وبرمجة المواقع">
-                    </div>
-                    <!-- End -->
+                    <div class="card-service">
+                        <!-- Icon image sevice -->
+                        <div class="icon-service text-center">
+                            <img src="./assets/images/website_design.svg" alt="تصميم وبرمجة المواقع">
+                        </div>
+                        <!-- End -->
 
-                    <!-- Title service -->
-                    <div class="title-service">
-                        <h3 class="custom-title-service text-center">تصميم وبرمجة المواقع</h3>
-                    </div>
-                    <!-- End -->
+                        <!-- Title service -->
+                        <div class="title-service">
+                            <h3 class="custom-title-service text-center">تصميم وبرمجة المواقع</h3>
+                        </div>
+                        <!-- End -->
 
-                    <!-- Description Service -->
-                    <div class="description-service">
-                        <p class="text-center">
-                            تصميم الموقع بشكل بسيط ومميز , متوافق مع جميع الأجهزة والمتصفحات.
-                        </p>
+                        <!-- Description Service -->
+                        <div class="description-service">
+                            <p class="text-center">
+                                تصميم الموقع بشكل بسيط ومميز , متوافق مع جميع الأجهزة والمتصفحات.
+                            </p>
+                        </div>
+                        <!-- End -->
                     </div>
-                    <!-- End -->
 
                 </div>
-                <div class="col-lg-4 col-md-12 card-service">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
 
-                    <!-- Icon image sevice -->
-                    <div class="icon-service text-center">
-                        <img src="./assets/images/user-interface.svg" alt="تجربة المستخدم">
-                    </div>
-                    <!-- End -->
+                    <div class="card-service">
+                        <!-- Icon image sevice -->
+                        <div class="icon-service text-center">
+                            <img src="./assets/images/user-interface.svg" alt="تجربة المستخدم">
+                        </div>
+                        <!-- End -->
 
-                    <!-- Title service -->
-                    <div class="title-service">
-                        <h3 class="custom-title-service text-center">تطبيقات الجوال</h3>
-                    </div>
-                    <!-- End -->
+                        <!-- Title service -->
+                        <div class="title-service">
+                            <h3 class="custom-title-service text-center">تطبيقات الجوال</h3>
+                        </div>
+                        <!-- End -->
 
-                    <!-- Description Service -->
-                    <div class="description-service">
-                        <p class="text-center">
-                            نقوم ببرمجة تطبيقات في كافة المجالات مثل المتاجر, المطاعم, العقارات, الشحن, ألعاب
-                        </p>
+                        <!-- Description Service -->
+                        <div class="description-service">
+                            <p class="text-center">
+                                نقوم ببرمجة تطبيقات في كافة المجالات مثل المتاجر, المطاعم, العقارات, الشحن, ألعاب
+                            </p>
+                        </div>
+                        <!-- End -->
                     </div>
-                    <!-- End -->
 
                 </div>
-                <div class="col-lg-4 col-md-12 card-service">
+                <div class="col-lg-4 col-md-6 d-lg-block d-md-none" data-aos="fade-up" data-aos-duration="2000">
 
-                    <!-- Icon image sevice -->
-                    <div class="icon-service text-center">
-                        <img src="./assets/images/marketing.svg" alt="خدمات تسويقية">
-                    </div>
-                    <!-- End -->
+                    <div class="card-service">
+                        <!-- Icon image sevice -->
+                        <div class="icon-service text-center">
+                            <img src="./assets/images/marketing.svg" alt="خدمات تسويقية">
+                        </div>
+                        <!-- End -->
 
-                    <!-- Title service -->
-                    <div class="title-service">
-                        <h3 class="custom-title-service text-center">دراسة تسويقية</h3>
-                    </div>
-                    <!-- End -->
+                        <!-- Title service -->
+                        <div class="title-service">
+                            <h3 class="custom-title-service text-center">دراسة تسويقية</h3>
+                        </div>
+                        <!-- End -->
 
-                    <!-- Description Service -->
-                    <div class="description-service">
-                        <p class="text-center">
-                            تصميم الموقع بشكل بسيط ومميز , متوافق مع جميع الأجهزة والمتصفحات.
-                        </p>
+                        <!-- Description Service -->
+                        <div class="description-service">
+                            <p class="text-center">
+                                تصميم الموقع بشكل بسيط ومميز , متوافق مع جميع الأجهزة والمتصفحات.
+                            </p>
+                        </div>
+                        <!-- End -->
                     </div>
-                    <!-- End -->
 
                 </div>
             </div>
@@ -290,73 +305,79 @@
 
             <!-- Two Row Services -->
             <div class="row">
-                <div class="col-lg-4 col-md-12 card-service">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
 
-                    <!-- Icon image sevice -->
-                    <div class="icon-service text-center">
-                        <img src="./assets/images/compass.svg" alt="الهوية التجارية">
-                    </div>
-                    <!-- End -->
+                    <div class="card-service">
+                        <!-- Icon image sevice -->
+                        <div class="icon-service text-center">
+                            <img src="./assets/images/compass.svg" alt="الهوية التجارية">
+                        </div>
+                        <!-- End -->
 
-                    <!-- Title service -->
-                    <div class="title-service">
-                        <h3 class="custom-title-service text-center">الهوية التجارية</h3>
-                    </div>
-                    <!-- End -->
+                        <!-- Title service -->
+                        <div class="title-service">
+                            <h3 class="custom-title-service text-center">الهوية التجارية</h3>
+                        </div>
+                        <!-- End -->
 
-                    <!-- Description Service -->
-                    <div class="description-service">
-                        <p class="text-center">
-                            نقوم بربط التطبيق مع خدمات إلكترونية خارجية مثل بوبات دفع, شركات شحن
-                        </p>
+                        <!-- Description Service -->
+                        <div class="description-service">
+                            <p class="text-center">
+                                نقوم بربط التطبيق مع خدمات إلكترونية خارجية مثل بوبات دفع, شركات شحن
+                            </p>
+                        </div>
+                        <!-- End -->
                     </div>
-                    <!-- End -->
 
                 </div>
-                <div class="col-lg-4 col-md-12 card-service">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
 
-                    <!-- Icon image sevice -->
-                    <div class="icon-service text-center">
-                        <img src="./assets/images/bill.svg" alt="خدمات الاستضافة">
-                    </div>
-                    <!-- End -->
+                    <div class="card-service">
+                        <!-- Icon image sevice -->
+                        <div class="icon-service text-center">
+                            <img src="./assets/images/bill.svg" alt="خدمات الاستضافة">
+                        </div>
+                        <!-- End -->
 
-                    <!-- Title service -->
-                    <div class="title-service">
-                        <h3 class="custom-title-service text-center">خدمات الاستضافة</h3>
-                    </div>
-                    <!-- End -->
+                        <!-- Title service -->
+                        <div class="title-service">
+                            <h3 class="custom-title-service text-center">خدمات الاستضافة</h3>
+                        </div>
+                        <!-- End -->
 
-                    <!-- Description Service -->
-                    <div class="description-service">
-                        <p class="text-center">
-                            توفير لوحة تحكم سهلة لإدارة محتوى الموقع من صور ..أخبار.. صفحات
-                        </p>
+                        <!-- Description Service -->
+                        <div class="description-service">
+                            <p class="text-center">
+                                توفير لوحة تحكم سهلة لإدارة محتوى الموقع من صور ..أخبار.. صفحات
+                            </p>
+                        </div>
+                        <!-- End -->
                     </div>
-                    <!-- End -->
 
                 </div>
-                <div class="col-lg-4 col-md-12 card-service">
+                <div class="col-lg-4 col-md-6 d-lg-block d-md-none" data-aos="fade-up" data-aos-duration="2000">
 
-                    <!-- Icon image sevice -->
-                    <div class="icon-service text-center">
-                        <img src="./assets/images/clipboard.svg" alt="إدارة الحملات الاعلانية">
-                    </div>
-                    <!-- End -->
+                    <div class="card-service">
+                        <!-- Icon image sevice -->
+                        <div class="icon-service text-center">
+                            <img src="./assets/images/clipboard.svg" alt="إدارة الحملات الاعلانية">
+                        </div>
+                        <!-- End -->
 
-                    <!-- Title service -->
-                    <div class="title-service">
-                        <h3 class="custom-title-service text-center">إدارة الحملات الاعلانية</h3>
-                    </div>
-                    <!-- End -->
+                        <!-- Title service -->
+                        <div class="title-service">
+                            <h3 class="custom-title-service text-center">إدارة الحملات الاعلانية</h3>
+                        </div>
+                        <!-- End -->
 
-                    <!-- Description Service -->
-                    <div class="description-service">
-                        <p class="text-center">
-                            ربط الموقع مع وسائل التواصل الإجتماعي، ربط الموقع مع وسائل التواصل الإجتماعي.
-                        </p>
+                        <!-- Description Service -->
+                        <div class="description-service">
+                            <p class="text-center">
+                                ربط الموقع مع وسائل التواصل الإجتماعي، ربط الموقع مع وسائل التواصل .
+                            </p>
+                        </div>
+                        <!-- End -->
                     </div>
-                    <!-- End -->
 
                 </div>
             </div>
@@ -370,7 +391,7 @@
     <!-- Business Gallery -->
     <section class="business_gallery">
         <!-- Border top // Circle -->
-        <div class="circle_top">
+        <div class="circle_top mt-3">
             <ul class="list-inline text-center">
                 <li class="list-inline-item">
                     <div class="cirlce-three"></div>
@@ -407,7 +428,7 @@
             <div class="row">
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -420,7 +441,7 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -434,7 +455,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -453,7 +475,7 @@
             <div class="row">
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -466,7 +488,7 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -479,7 +501,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -498,7 +521,7 @@
             <div class="row">
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -511,7 +534,7 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -524,7 +547,8 @@
                 <!-- End Project One -->
 
                 <!-- Project One -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-lg-block d-md-none mb-4" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div class="card">
                         <img src="./assets/images/Project_one.png" class="card-img-top" alt="mouckup-1">
                         <div class="card-body">
@@ -1028,10 +1052,15 @@
     <!-- Footer Page -->
 
 
-      
-
-
     <script type="text/script" src="{require{'./index.js'}}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Script only on page HomePage -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- End -->
+
 </body>
 
 </html>
