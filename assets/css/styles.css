@@ -17117,7 +17117,7 @@ p,
 span {
     color: #000;
     font-family: ar-content;
-    font-size: 17px
+    font-size: 16px
 }
 
 .navbar.navbar-dark.box-shadow {
@@ -17140,7 +17140,16 @@ span {
 .visit-link li a {
     color: #fff;
     font-family: ar-heading;
-    font-size: 17px
+    font-size: 17px;
+    transition: all .6s ease-in-out
+}
+
+.visit-link li a:active,
+.visit-link li a:focus,
+.visit-link li a:hover {
+    background-color: #838def;
+    padding: 10px 20px;
+    border-radius: 25px
 }
 
 .main-menu .nav li a {
@@ -17153,7 +17162,7 @@ span {
 .main-menu .nav li a:active,
 .main-menu .nav li a:focus,
 .main-menu .nav li a:hover {
-    color: wheat
+    color: #00eca2
 }
 
 .main-menu .nav li {
@@ -17297,10 +17306,14 @@ span {
     color: #000
 }
 
+.form-request-send .form-group input {
+    height: 50px
+}
+
 .form-request-send .form-group input,
 .form-request-send .form-group textarea {
     border-color: #6e72e3;
-    border-radius: 5px
+    border-radius: 25px
 }
 
 .form-request-send .custom-btn-primary {
@@ -17433,17 +17446,21 @@ header.header_top_page .portfolio_projects {
 header.header_top_page .portfolio_projects a {
     font-family: ar-heading;
     font-size: 18px;
-    background-color: #fff;
-    padding: 15px 40px;
+    background-color: #838def;
+    padding: 12px 40px;
     border-radius: 50px;
-    color: #453ecc;
-    transition: all .5s ease-in-out
+    color: #000;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: -118px 0 0 #fff inset
 }
 
+header.header_top_page .portfolio_projects a:active,
+header.header_top_page .portfolio_projects a:focus,
 header.header_top_page .portfolio_projects a:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #453ecc
+    background-color: #453ecc;
+    -webkit-box-shadow: -70px 0 0 #6e72e3 inset
 }
 
 header.header_top_page .image-header img {
@@ -17468,7 +17485,7 @@ section.about-company {
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: #8af1d3;
+    background-color: #00eca2;
     margin: 0 auto
 }
 
@@ -17506,12 +17523,17 @@ section.about-company .read_more a {
     padding: 10px 45px;
     border-radius: 50px;
     color: #fff;
-    transition: all .5s ease-in-out
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: -100px 0 0 #838def inset
 }
 
+section.about-company .read_more a:active,
+section.about-company .read_more a:focus,
 section.about-company .read_more a:hover {
     text-decoration: none;
-    color: wheat
+    color: #fff;
+    font-weight: 500;
+    -webkit-box-shadow: -30px 0 0 #838def inset
 }
 
 section.services_arts {
@@ -17563,7 +17585,8 @@ section.business_gallery .card .card-body a.btn {
 section.business_gallery .card .card-body a.btn:active,
 section.business_gallery .card .card-body a.btn:focus,
 section.business_gallery .card .card-body a.btn:hover {
-    color: wheat
+    color: #000;
+    -webkit-box-shadow: -110px 0 0 #00eca2 inset
 }
 
 section.our_clients #carouselClinetsIndicators .carousel-indicators {
@@ -17749,13 +17772,8 @@ footer.footer-page .copyright p.copyright {
         margin-bottom: 45px
     }
 
-    section.services_arts {
-        padding: 65px 0;
-        height: 395vh
-    }
-
     section.business_gallery {
-        margin-top: -135%
+        margin-top: -25%
     }
 
     section.our_clients #carouselClinetsIndicators .carousel-indicators {
@@ -17833,7 +17851,7 @@ footer.footer-page .copyright p.copyright {
     }
 
     section.business_gallery {
-        margin-top: -70%
+        margin-top: -50%
     }
 
     section.our_clients #carouselClinetsIndicators .carousel-indicators img {
@@ -17930,5 +17948,11 @@ footer.footer-page .copyright p.copyright {
 
     section.services_arts {
         padding: 50px 0 150px
+    }
+}
+
+@media (min-width:1500px) and (max-width:1700px) {
+    section.services_arts {
+        height: 130vh
     }
 }
