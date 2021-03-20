@@ -17051,6 +17051,371 @@ a.text-dark:hover {
     font-weight: 900
 }
 
+@-webkit-keyframes passing-through {
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+
+    30%,
+    70% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-40px)
+    }
+}
+
+@keyframes passing-through {
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+
+    30%,
+    70% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-40px)
+    }
+}
+
+@-webkit-keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    10% {
+        transform: scale(1.1)
+    }
+
+    20% {
+        transform: scale(1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    10% {
+        transform: scale(1.1)
+    }
+
+    20% {
+        transform: scale(1)
+    }
+}
+
+.dropzone,
+.dropzone * {
+    box-sizing: border-box
+}
+
+.dropzone {
+    min-height: 150px;
+    border: 2px solid rgba(0, 0, 0, .3);
+    background: #fff;
+    padding: 20px
+}
+
+.dropzone.dz-clickable {
+    cursor: pointer
+}
+
+.dropzone.dz-clickable * {
+    cursor: default
+}
+
+.dropzone.dz-clickable .dz-message,
+.dropzone.dz-clickable .dz-message * {
+    cursor: pointer
+}
+
+.dropzone.dz-started .dz-message {
+    display: none
+}
+
+.dropzone.dz-drag-hover {
+    border-style: solid
+}
+
+.dropzone.dz-drag-hover .dz-message {
+    opacity: .5
+}
+
+.dropzone .dz-message {
+    text-align: center;
+    margin: 2em 0
+}
+
+.dropzone .dz-message .dz-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit
+}
+
+.dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px;
+    min-height: 100px
+}
+
+.dropzone .dz-preview:hover {
+    z-index: 1000
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-image {
+    border-radius: 20px;
+    background: #999;
+    background: linear-gradient(180deg, #eee, #ddd)
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-details {
+    opacity: 1
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    background: #fff
+}
+
+.dropzone .dz-preview.dz-image-preview .dz-details {
+    transition: opacity .2s linear
+}
+
+.dropzone .dz-preview .dz-remove {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: none
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    text-decoration: underline
+}
+
+.dropzone .dz-preview:hover .dz-details {
+    opacity: 1
+}
+
+.dropzone .dz-preview .dz-details {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 13px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2em 1em;
+    text-align: center;
+    color: rgba(0, 0, 0, .9);
+    line-height: 150%
+}
+
+.dropzone .dz-preview .dz-details .dz-size {
+    margin-bottom: 1em;
+    font-size: 16px
+}
+
+.dropzone .dz-preview .dz-details .dz-filename {
+    white-space: nowrap
+}
+
+.dropzone .dz-preview .dz-details .dz-filename:hover span {
+    border: 1px solid hsla(0, 0%, 78.4%, .8);
+    background-color: hsla(0, 0%, 100%, .8)
+}
+
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover) {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {
+    border: 1px solid transparent
+}
+
+.dropzone .dz-preview .dz-details .dz-filename span,
+.dropzone .dz-preview .dz-details .dz-size span {
+    background-color: hsla(0, 0%, 100%, .4);
+    padding: 0 .4em;
+    border-radius: 3px
+}
+
+.dropzone .dz-preview:hover .dz-image img {
+    transform: scale(1.05);
+    -webkit-filter: blur(8px);
+    filter: blur(8px)
+}
+
+.dropzone .dz-preview .dz-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: block;
+    z-index: 10
+}
+
+.dropzone .dz-preview .dz-image img {
+    display: block
+}
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+    -webkit-animation: passing-through 3s cubic-bezier(.77, 0, .175, 1);
+    animation: passing-through 3s cubic-bezier(.77, 0, .175, 1)
+}
+
+.dropzone .dz-preview.dz-error .dz-error-mark {
+    opacity: 1;
+    -webkit-animation: slide-in 3s cubic-bezier(.77, 0, .175, 1);
+    animation: slide-in 3s cubic-bezier(.77, 0, .175, 1)
+}
+
+.dropzone .dz-preview .dz-error-mark,
+.dropzone .dz-preview .dz-success-mark {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 500;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -27px
+}
+
+.dropzone .dz-preview .dz-error-mark svg,
+.dropzone .dz-preview .dz-success-mark svg {
+    display: block;
+    width: 54px;
+    height: 54px
+}
+
+.dropzone .dz-preview.dz-processing .dz-progress {
+    opacity: 1;
+    transition: all .2s linear
+}
+
+.dropzone .dz-preview.dz-complete .dz-progress {
+    opacity: 0;
+    transition: opacity .4s ease-in
+}
+
+.dropzone .dz-preview:not(.dz-processing) .dz-progress {
+    -webkit-animation: pulse 6s ease infinite;
+    animation: pulse 6s ease infinite
+}
+
+.dropzone .dz-preview .dz-progress {
+    opacity: 1;
+    z-index: 1000;
+    pointer-events: none;
+    position: absolute;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+    width: 80px;
+    margin-left: -40px;
+    background: hsla(0, 0%, 100%, .9);
+    -webkit-transform: scale(1);
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+    background: #333;
+    background: linear-gradient(180deg, #666, #444);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: width .3s ease-in-out
+}
+
+.dropzone .dz-preview.dz-error .dz-error-message {
+    display: block
+}
+
+.dropzone .dz-preview.dz-error:hover .dz-error-message {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.dropzone .dz-preview .dz-error-message {
+    pointer-events: none;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    display: none;
+    opacity: 0;
+    transition: opacity .3s ease;
+    border-radius: 8px;
+    font-size: 13px;
+    top: 130px;
+    left: -10px;
+    width: 140px;
+    background: #be2626;
+    background: linear-gradient(180deg, #be2626, #a92222);
+    padding: .5em 1.2em;
+    color: #fff
+}
+
+.dropzone .dz-preview .dz-error-message:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 64px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #be2626
+}
+
 img {
     height: 400px
 }
@@ -17118,6 +17483,10 @@ span {
     color: #000;
     font-family: ar-content;
     font-size: 16px
+}
+
+label {
+    font-weight: 700
 }
 
 .navbar.navbar-dark.box-shadow {
@@ -17311,27 +17680,40 @@ span {
 }
 
 .form-request-send .form-group input,
+.form-request-send .form-group select,
 .form-request-send .form-group textarea {
     border-color: #6e72e3;
     border-radius: 25px
 }
 
-.form-request-send .custom-btn-primary {
-    background: #6e72e3;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
-    transition: all .5s ease-in-out
+.form-request-send .form-group select {
+    height: 50px
 }
 
-.form-request-send .custom-btn-primary:active,
-.form-request-send .custom-btn-primary :focus,
-.form-request-send .custom-btn-primary:hover {
-    background-color: #453ecc
+.custom-btn-primary {
+    background: #6e72e3;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: -105px 0 0 #fff inset
+}
+
+.custom-btn-primary:active,
+.custom-btn-primary :focus,
+.custom-btn-primary:hover {
+    background-color: #453ecc;
+    color: #fff;
+    -webkit-box-shadow: -45px 0 0 #6e72e3 inset
+}
+
+.dropzone {
+    border-radius: 15px;
+    border-color: #6e72e3
 }
 
 header.bg-about {
-    background-image: url(../images/bg-about.svg);
+    background-image: url(../images//bg-about.svg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat
@@ -17370,7 +17752,8 @@ section.about-our-company .file-company a {
     text-decoration: none;
     background-color: #6e72e3;
     padding: 10px 25px;
-    color: #fff;
+    color: #000;
+    border: 1px inset #453ecc;
     border-radius: 25px;
     transition: all .5s ease-in-out
 }
@@ -17388,11 +17771,96 @@ section.about-our-company .file-company a svg {
 }
 
 section.statistics {
-    background-image: url(../images/Background.svg);
+    background-image: url(../images//Background.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 65px 0
+}
+
+section.statistics .title-statistics h3 {
+    margin: 25px 0
+}
+
+section.statistics .number p {
+    font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #453ecc
+}
+
+section.statistics .name-static p {
+    font-size: 20px;
+    font-weight: 600
+}
+
+section.Vision-message {
+    background-image: url(../images//vision-msg.svg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0
+}
+
+section.Vision-message .content-section {
+    margin-top: 10%
+}
+
+section.Vision-message .title-vision h3 {
+    font-size: 26px;
+    margin: 30px 0
+}
+
+section.Vision-message .image-creative {
+    text-align: center
+}
+
+section.Vision-message .image-creative img {
+    height: 350px;
+    margin: 60px 0
+}
+
+section.management-members .space-top {
+    margin: 60px 0 8px
+}
+
+section.management-members .card {
+    box-shadow: 0 4px 16px rgba(17, 17, 26, .05), 0 8px 32px #6e72e3;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px
+}
+
+section.management-members .card .card-body h5 {
+    font-size: 22px
+}
+
+section.management-members .card .card-body .icon-media ul {
+    padding: 0
+}
+
+section.management-members .card .card-body .icon-media .list-inline-item:not(:last-child) {
+    margin-right: 0
+}
+
+section.management-members .card .card-body .icon-media ul li {
+    margin-left: 20px;
+    border: 1px solid grey;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all .6s ease-in-out
+}
+
+section.management-members .card .card-body .icon-media ul li:active,
+section.management-members .card .card-body .icon-media ul li:focus,
+section.management-members .card .card-body .icon-media ul li:hover {
+    -webkit-box-shadow: -30px 0 0 #e6e6e6 inset
+}
+
+section.management-members .card .card-body .icon-media ul li a svg {
+    color: hsla(0, 0%, 50.2%, .7)
 }
 
 body {
@@ -17403,7 +17871,7 @@ body {
 }
 
 header.header_top_page {
-    background-image: url(../images/header_home.svg);
+    background-image: url(../images//header_home.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17537,7 +18005,7 @@ section.about-company .read_more a:hover {
 }
 
 section.services_arts {
-    background-image: url(../images/bg-services.svg);
+    background-image: url(../images//bg-services.svg);
     background-position: 50%;
     background-size: cover;
     padding: 150px 0
@@ -17651,16 +18119,18 @@ section.Contact-us .contact-us-now .contect-now a {
     padding: 12px 70px;
     color: #fff;
     line-height: 7;
-    transition: all .5s ease-in-out
+    -webkit-box-shadow: -50px 0 0 #00eca2 inset;
+    transition: all .6s ease-in-out
 }
 
 section.Contact-us .contact-us-now .contect-now a:focus section.Contact-us .contact-us-now .contect-now a:active,
 section.Contact-us .contact-us-now .contect-now a:hover {
-    background-color: #6e72e3
+    -webkit-box-shadow: -250px 0 0 #00eca2 inset;
+    color: #000
 }
 
 footer.footer-page {
-    background-image: url(../images/footer_bg.svg);
+    background-image: url(../images//footer_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -17830,6 +18300,23 @@ footer.footer-page .copyright p.copyright {
         text-align: center;
         margin: 20px 0
     }
+
+    header.bg-about {
+        height: 130vh
+    }
+
+    section.Vision-message .image-creative img {
+        height: 210px
+    }
+
+    .hide-section-on-mobile,
+    .scroll-down img {
+        display: none
+    }
+
+    section.about-our-company {
+        margin-top: -40%
+    }
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -17886,6 +18373,10 @@ footer.footer-page .copyright p.copyright {
         text-align: center;
         margin: 20px 0
     }
+
+    header.bg-about {
+        height: 90vh
+    }
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
@@ -17935,6 +18426,10 @@ footer.footer-page .copyright p.copyright {
         text-align: center;
         margin: 20px 0
     }
+
+    header.bg-about {
+        height: 75vh
+    }
 }
 
 @media (min-width:992px) and (max-width:1199.98px) {
@@ -17949,10 +18444,24 @@ footer.footer-page .copyright p.copyright {
     section.services_arts {
         padding: 50px 0 150px
     }
+
+    header.bg-about {
+        height: 73vh
+    }
 }
 
-@media (min-width:1500px) and (max-width:1700px) {
+@media (min-width:1200px) and (max-width:1399.98px) {
+    header.bg-about {
+        height: 75vh
+    }
+}
+
+@media (min-width:1400px) and (max-width:1700px) {
     section.services_arts {
         height: 130vh
+    }
+
+    header.bg-about {
+        height: 75vh
     }
 }
