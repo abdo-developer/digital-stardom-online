@@ -18470,7 +18470,7 @@ footer.footer-page .copyright p.copyright {
     }
 }
 
-@media (max-width:2000px) {
+@media (min-width:2000px) {
     header.bg-about {
         height: 75vh
     }
