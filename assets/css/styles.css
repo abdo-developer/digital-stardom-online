@@ -17863,6 +17863,54 @@ section.management-members .card .card-body .icon-media ul li a svg {
     color: hsla(0, 0%, 50.2%, .7)
 }
 
+section.our_services_arts {
+    margin: 50px 0
+}
+
+section.our_services_arts .title-services h4 {
+    margin-bottom: 12px
+}
+
+section.our_services_arts .small-description p {
+    font-size: 17px;
+    font-weight: 600
+}
+
+section.our_services_arts .description-service p {
+    margin: 50px 0 40px;
+    font-size: 17px
+}
+
+section.our_services_arts .glow-on-hover a {
+    padding: 8px 26px;
+    background-color: #6e72e3;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    -webkit-box-shadow: -10px 0 0 #00eca2 inset;
+    transition: all .6s ease-in-out
+}
+
+section.our_services_arts .glow-on-hover a:active,
+section.our_services_arts .glow-on-hover a:focus,
+section.our_services_arts .glow-on-hover a:hover {
+    -webkit-box-shadow: -130px 0 0 #00eca2 inset;
+    color: #000
+}
+
+section.our_services_arts .image-explain {
+    text-align: left
+}
+
+section.our_services_arts .image-reserve {
+    text-align: right
+}
+
+section.our_services_arts .image-explain img {
+    height: 300px;
+    margin: 40px 0 15px
+}
+
 body {
     font-family: ar-content;
     color: #000;
@@ -17911,7 +17959,7 @@ header.header_top_page .portfolio_projects {
     margin-top: 50px
 }
 
-header.header_top_page .portfolio_projects a {
+.portfolio_projects a {
     font-family: ar-heading;
     font-size: 18px;
     background-color: #838def;
@@ -17922,9 +17970,9 @@ header.header_top_page .portfolio_projects a {
     -webkit-box-shadow: -118px 0 0 #fff inset
 }
 
-header.header_top_page .portfolio_projects a:active,
-header.header_top_page .portfolio_projects a:focus,
-header.header_top_page .portfolio_projects a:hover {
+.portfolio_projects a:active,
+.portfolio_projects a:focus,
+.portfolio_projects a:hover {
     text-decoration: none;
     color: #fff;
     background-color: #453ecc;
@@ -18321,6 +18369,34 @@ footer.footer-page .copyright p.copyright {
     section.about-our-company {
         margin-top: -40%
     }
+
+    header.bg-services {
+        height: 100vh
+    }
+
+    section.our_services_arts .circle_top ul,
+    section.our_services_arts .description-service p,
+    section.our_services_arts .glow-on-hover,
+    section.our_services_arts .small-description p,
+    section.our_services_arts .title-services h4 {
+        text-align: center
+    }
+
+    section.our_services_arts {
+        margin: 0
+    }
+
+    .hidden-on-smaller {
+        display: none
+    }
+
+    section.our_services_arts .image-explain {
+        text-align: center
+    }
+
+    section.our_services_arts .image-explain img {
+        height: 180px
+    }
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -18381,6 +18457,10 @@ footer.footer-page .copyright p.copyright {
     header.bg-about {
         height: 90vh
     }
+
+    section.our_services_arts .image-explain {
+        text-align: center
+    }
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
@@ -18433,6 +18513,10 @@ footer.footer-page .copyright p.copyright {
 
     header.bg-about {
         height: 75vh
+    }
+
+    section.our_services_arts .image-explain img {
+        height: 250px
     }
 }
 
