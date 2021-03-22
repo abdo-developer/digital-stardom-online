@@ -17713,7 +17713,7 @@ label {
 }
 
 header.bg-about {
-    background-image: url(../images//bg-about.svg);
+    background-image: url(../images/bg-about.svg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat
@@ -17771,7 +17771,7 @@ section.about-our-company .file-company a svg {
 }
 
 section.statistics {
-    background-image: url(../images//Background.svg);
+    background-image: url(../images/Background.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17795,7 +17795,7 @@ section.statistics .name-static p {
 }
 
 section.Vision-message {
-    background-image: url(../images//vision-msg.svg);
+    background-image: url(../images/vision-msg.svg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17871,7 +17871,7 @@ body {
 }
 
 header.header_top_page {
-    background-image: url(../images//header_home.svg);
+    background-image: url(../images/header_home.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18005,7 +18005,7 @@ section.about-company .read_more a:hover {
 }
 
 section.services_arts {
-    background-image: url(../images//bg-services.svg);
+    background-image: url(../images/bg-services.svg);
     background-position: 50%;
     background-size: cover;
     padding: 150px 0
@@ -18025,6 +18025,10 @@ section.services_arts .card-service .icon-service img {
 
 section.services_arts .card-service .title-service {
     margin-bottom: 20px
+}
+
+section.business_gallery {
+    margin-top: 30px
 }
 
 section.business_gallery .card {
@@ -18130,7 +18134,7 @@ section.Contact-us .contact-us-now .contect-now a:hover {
 }
 
 footer.footer-page {
-    background-image: url(../images//footer_bg.svg);
+    background-image: url(../images/footer_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -18456,11 +18460,17 @@ footer.footer-page .copyright p.copyright {
     }
 }
 
-@media (min-width:1400px) and (max-width:1700px) {
+@media (min-width:1400px) and (max-width:1800px) {
     section.services_arts {
         height: 130vh
     }
 
+    header.bg-about {
+        height: 75vh
+    }
+}
+
+@media (max-width:2000px) {
     header.bg-about {
         height: 75vh
     }
