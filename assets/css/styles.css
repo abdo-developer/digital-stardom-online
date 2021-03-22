@@ -17911,6 +17911,58 @@ section.our_services_arts .image-explain img {
     margin: 40px 0 15px
 }
 
+section.business_gallery .filter-projects {
+    margin: 30px 0;
+    box-shadow: 0 4px 16px rgba(17, 17, 26, .05), 0 8px 32px rgba(17, 17, 26, .05);
+    padding: 20px 0;
+    border-radius: 50px
+}
+
+section.business_gallery .page-item:first-child .page-link {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+
+section.business_gallery .page-item:last-child .page-link {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px
+}
+
+section.business_gallery .filter-projects .click-check a {
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all .6s ease-in-out
+}
+
+section.business_gallery .filter-projects .click-check a:active,
+section.business_gallery .filter-projects .click-check a:focus,
+section.business_gallery .filter-projects .click-check a:hover {
+    background-color: #453ecc;
+    border-radius: 25px;
+    padding: 6px 10px;
+    color: #fff
+}
+
+section.business_gallery .pagination-pages ul li a {
+    color: #453ecc;
+    transition: all .6s ease-in-out
+}
+
+section.business_gallery .pagination-pages ul li a.active {
+    background-color: #453ecc;
+    color: #fff;
+    font-weight: 600
+}
+
+section.business_gallery .pagination-pages ul li a:active,
+section.business_gallery .pagination-pages ul li a:focus,
+section.business_gallery .pagination-pages ul li a:hover {
+    -webkit-box-shadow: -110px 0 0 #453ecc inset;
+    color: #fff;
+    font-weight: 600
+}
+
 body {
     font-family: ar-content;
     color: #000;
@@ -18397,6 +18449,19 @@ footer.footer-page .copyright p.copyright {
     section.our_services_arts .image-explain img {
         height: 180px
     }
+
+    section.business_gallery .filter-projects {
+        margin-top: 15%
+    }
+
+    section.business_gallery .filter-projects .click-check a {
+        font-size: 15px;
+        margin-left: 1px
+    }
+
+    section.blog {
+        margin-top: -5%
+    }
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -18461,6 +18526,19 @@ footer.footer-page .copyright p.copyright {
     section.our_services_arts .image-explain {
         text-align: center
     }
+
+    section.business_gallery .filter-projects {
+        margin-top: 45%
+    }
+
+    section.business_gallery .filter-projects .click-check a {
+        font-size: 16px;
+        margin-left: 3px
+    }
+
+    section.blog {
+        margin-top: 0
+    }
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
@@ -18517,6 +18595,10 @@ footer.footer-page .copyright p.copyright {
 
     section.our_services_arts .image-explain img {
         height: 250px
+    }
+
+    section.blog {
+        margin-top: 0
     }
 }
 
