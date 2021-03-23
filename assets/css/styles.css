@@ -18147,13 +18147,6 @@ section.loading-page .name-company h3 {
     color: #fff
 }
 
-section.loading-page .text-loanding p {
-    font-size: 24px;
-    color: #fff;
-    font-weight: 700;
-    margin-top: 25px
-}
-
 section.loading-page ul.circle_animate {
     position: absolute;
     top: 50%;
