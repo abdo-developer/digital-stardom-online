@@ -17963,6 +17963,287 @@ section.business_gallery .pagination-pages ul li a:hover {
     font-weight: 600
 }
 
+section.content-article .circle_top ul {
+    margin-top: 40px
+}
+
+section.content-article article {
+    margin: 25px 0 20px;
+    text-align: justify
+}
+
+section.content-article article .image-article {
+    text-align: center
+}
+
+section.content-article article .custom-image img {
+    height: 180px !important
+}
+
+section.content-article article .image-article img {
+    margin: 30px 0;
+    height: 300px
+}
+
+section.content-article .share-social-media .share-now ul li {
+    display: inline-table;
+    background-color: #453ecc;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 0 !important;
+    margin-left: 8px;
+    border-radius: 5px;
+    box-shadow: 6px 2px 16px 0 rgba(136, 165, 191, .48), -6px -2px 16px 0 rgba(136, 165, 191, .48);
+    transition: all .7s ease-in-out
+}
+
+section.content-article .share-social-media .share-now ul li:active,
+section.content-article .share-social-media .share-now ul li:focus,
+section.content-article .share-social-media .share-now ul li:hover {
+    background-color: #00eca2
+}
+
+section.content-article .share-social-media .share-now ul {
+    margin-top: 20px
+}
+
+section.content-article .share-social-media .share-now ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    transition: all .6s ease-in-out
+}
+
+section.content-article .share-social-media .share-now ul li a:active,
+section.content-article .share-social-media .share-now ul li a:focus,
+section.content-article .share-social-media .share-now ul li a:hover {
+    color: #000
+}
+
+section.inesrt-form .circle ul {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0
+}
+
+section.inesrt-form .circle ul li {
+    margin-right: 0 !important;
+    margin-left: 3px
+}
+
+section.inesrt-form .circle ul li .cirlce-one {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00eca2;
+    margin: 0 auto
+}
+
+section.inesrt-form .circle ul li .cirlce-two {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #838def
+}
+
+section.inesrt-form .circle ul li .cirlce-three {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #6e72e3
+}
+
+section.inesrt-form .information-company {
+    margin-top: 50px
+}
+
+section.inesrt-form .information-company .line-left {
+    border-left: 1px solid #453ecc
+}
+
+section.inesrt-form .information-company .adress p {
+    color: #6e72e3;
+    font-weight: 700
+}
+
+section.inesrt-form form {
+    margin-top: 60px
+}
+
+section.inesrt-form .form-group svg {
+    font-size: 20px;
+    margin-left: 4px;
+    color: #6e72e3
+}
+
+section.inesrt-form .form-group label {
+    font-weight: 600
+}
+
+section.inesrt-form .form-group input {
+    height: 45px
+}
+
+section.inesrt-form .form-group input,
+section.inesrt-form .form-group textarea {
+    background-color: rgba(221, 219, 248, .98431);
+    border: none;
+    border-radius: 20px
+}
+
+section.inesrt-form .form-group button.btn-custom {
+    background-color: #453ecc;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 6px 2px 16px 0 rgba(136, 165, 191, .48), -6px -2px 16px 0 #838def;
+    transition: all .5s ease-in-out
+}
+
+section.inesrt-form .form-group button.btn-custom:active,
+section.inesrt-form .form-group button.btn-custom:focus,
+section.inesrt-form .form-group button.btn-custom:hover {
+    background-color: #6e72e3
+}
+
+section.inesrt-form .image-pro img {
+    margin-top: 60px
+}
+
+body.bg-loading {
+    margin: 0;
+    padding: 0;
+    background: #453ecc
+}
+
+section.loading-page ul.circle_animate {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    padding: 0;
+    display: flex
+}
+
+section.loading-page ul.circle_animate li.animate-loanding {
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #00eca2;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-animation: animate 1.4s linear infinite;
+    animation: animate 1.4s linear infinite
+}
+
+@-webkit-keyframes animate {
+    0% {
+        transform: translateY(0)
+    }
+
+    60% {
+        transform: translateY(0)
+    }
+
+    80% {
+        transform: translateY(-20px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0)
+    }
+
+    60% {
+        transform: translateY(0)
+    }
+
+    80% {
+        transform: translateY(-20px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+section.loading-page ul.circle_animate li:first-child {
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s
+}
+
+section.loading-page ul.circle_animate li:nth-child(2) {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+section.loading-page ul.circle_animate li:nth-child(3) {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+}
+
+section.loading-page ul.circle_animate li:nth-child(4) {
+    -webkit-animation-delay: -.6s;
+    animation-delay: -.6s
+}
+
+section.details_projects {
+    margin-top: 40px
+}
+
+section.details_projects .title-serve h5 {
+    margin: 30px 0 15px;
+    font-size: 20px
+}
+
+section.details_projects .list-service ul {
+    padding: 0
+}
+
+section.details_projects .list-service ul li {
+    margin-bottom: 8px;
+    font-size: 17px
+}
+
+section.details_projects .list-service ul li svg {
+    color: #453ecc;
+    font-size: 20px
+}
+
+section.view-project {
+    margin-top: 40px
+}
+
+section.view-project .title-project h4 {
+    margin-bottom: 30px
+}
+
+section.view-project #carouselScreenProject {
+    text-align: center
+}
+
+section.view-project #carouselScreenProject ol {
+    padding: 0
+}
+
+section.view-project #carouselScreenProject ol.carousel-indicators li {
+    background-color: #00eca2;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%
+}
+
+section.view-project #carouselScreenProject .carousel-inner .carousel-item img {
+    margin-bottom: 50px
+}
+
 body {
     font-family: ar-content;
     color: #000;
@@ -18462,6 +18743,45 @@ footer.footer-page .copyright p.copyright {
     section.blog {
         margin-top: -5%
     }
+
+    section.content-article .circle_top ul {
+        margin-top: 0
+    }
+
+    section.content-article article .custom-image img {
+        height: 80px !important
+    }
+
+    section.content-article article .image-article img {
+        height: 150px
+    }
+
+    section.content-article .share-social-media .share-now ul,
+    section.content-article .share-social-media .title-social h5 {
+        text-align: center
+    }
+
+    section.inesrt-form .information-company .line-left {
+        border-bottom: 1px solid #453ecc;
+        border-left: none;
+        margin: 20px 0
+    }
+
+    section.details_projects {
+        margin-top: 0
+    }
+
+    section.view-project #carouselScreenProject .carousel-inner .carousel-item img {
+        height: 165px
+    }
+
+    section.view-project #carouselScreenProject ol {
+        padding: 0
+    }
+
+    section.our-projects-now {
+        margin-top: 0
+    }
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -18536,7 +18856,34 @@ footer.footer-page .copyright p.copyright {
         margin-left: 3px
     }
 
-    section.blog {
+    section.blog,
+    section.content-article .circle_top ul {
+        margin-top: 0
+    }
+
+    section.content-article article .custom-image img {
+        height: 130px !important
+    }
+
+    section.content-article article .image-article img {
+        height: 250px
+    }
+
+    section.inesrt-form .information-company .line-left {
+        border-bottom: 1px solid #453ecc;
+        border-left: none;
+        margin: 20px 0
+    }
+
+    section.view-project #carouselScreenProject .carousel-inner .carousel-item img {
+        height: 280px
+    }
+
+    section.view-project #carouselScreenProject ol {
+        padding: 0
+    }
+
+    section.our-projects-now {
         margin-top: 0
     }
 }
@@ -18600,6 +18947,20 @@ footer.footer-page .copyright p.copyright {
     section.blog {
         margin-top: 0
     }
+
+    section.inesrt-form .information-company .line-left {
+        border-bottom: 1px solid #453ecc;
+        border-left: none;
+        margin: 20px 0
+    }
+
+    section.view-project #carouselScreenProject {
+        margin-bottom: 20%
+    }
+
+    section.view-project #carouselScreenProject ol {
+        padding: 0
+    }
 }
 
 @media (min-width:992px) and (max-width:1199.98px) {
@@ -18636,7 +18997,7 @@ footer.footer-page .copyright p.copyright {
     }
 }
 
-@media (min-width:2000px) {
+@media (min-width:1801px) and (max-width:2000px) {
     header.bg-about {
         height: 75vh
     }
