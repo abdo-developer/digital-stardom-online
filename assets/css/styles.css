@@ -19025,10 +19025,18 @@ footer.footer-page .copyright p.copyright {
     header.bg-about {
         height: 75vh
     }
+
+    header.bg-blog {
+        height: 100vh
+    }
 }
 
 @media (min-width:1801px) and (max-width:3000px) {
     header.bg-about {
         height: 75vh
+    }
+
+    header.bg-blog {
+        height: 105vh
     }
 }
